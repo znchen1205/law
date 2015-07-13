@@ -1,15 +1,7 @@
 body{
 	margin:0;
-	font-family: 'Open Sans', sans-serif;
-	background: url(../images/banner-bg.png) repeat 0px 0px;
-	background-size: 20%;
-}
-body a{
-	transition: 0.5s all ease;
-	-webkit-transition: 0.5s all ease;
-	-moz-transition: 0.5s all ease;
-	-o-transition: 0.5s all ease;
-	-ms-transition: 0.5s all ease;
+	font-family: '微軟正黑體', sans-serif;
+	background-color: #0A111F;
 }
 h1,h2,h3,h4,h5,h6{
 	margin:0;
@@ -26,36 +18,35 @@ body a:hover{
 }
 /*----------------------header----------------------*/
 .header{
-	background:#fff;
-	padding:0;
-	margin: 2em 0 0.8em;
+	background-color: #263248;
 	position:relative;
+	height: 90px;
 }
-.top-middle {
+.top-logo {
 	position: absolute;
-	display: block;
-	top: -12%;
-    left: 11%;
+	top: 15px;
+    left: 30px;
+    width: 320px;
 }
-.top-middle a {
-  padding: 3em 2.5em 2.5em;
-  display: block;
-  background: url(../images/bg2.png)no-repeat 0px 0px;
-  background-size: cover;
-  text-align: center;
-  text-decoration: none;
+.logo-icon img{
+	float: left;
+	height: 60px;
+	width: 60px;
 }
-.top-middle a h3 {
-	color: #fff;
-	font-size: 3em;
-	font-weight: 800;
-	text-align: center;
-	letter-spacing: -1px;
-	margin: 0;
-	font-family: 'Roboto', sans-serif;
+.logo-title h3 {
+	font-size: 24px;
+	color:#fff;
+	margin:15px 0px 0px 75px;
+}
+.logo-title h5 {
+	font-size: 14px;
+	color:#fff;
+	margin: 5px 0px 0px 75px;
 }
 .top-nav {
 	float:right;
+	top: 15px;
+	right: 30px;
 }
 span.menu {
 	display: none;
@@ -66,56 +57,63 @@ span.menu {
 .top-nav ul li{
 	list-style-type:none;
 	display: inline-block;
-	margin: 0 0.25em;
 }
-.top-nav ul li a {
+.nav1 a {
 	position: relative;
 	display: inline-block;
-	margin: 0;
-	color: #37393d;
-	text-decoration: none;
-	letter-spacing: 0.5px;
-	font-weight: 400;
-	text-shadow: 0 0 1px rgba(255,255,255,0.3);
-	font-size: 18px;
-	font-family: 'Roboto', sans-serif;
-	padding: 0 .5em;
-}
-.top-nav ul li a:hover,.top-nav ul li a.active {
-  color: #fff;
-  background: rgb(58, 222, 203);
-  padding: 3.5em 0.5em;
-}
-.top-nav ul li a:hover,
-.top-nav ul li a:focus {
+	margin: 20px 0px;
+	padding: 10px;
 	outline: none;
+	color: #fff;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-family: "微軟正黑體";
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	transition: color 0.3s;
 }
-/*--bottom border enlarge--*/
-.top-nav ul li a::after {
+.nav1 a::before,
+.nav1 a::after {
 	position: absolute;
-	top: 100%;
 	left: 0;
 	width: 100%;
-	height: 1px;
-	background: rgb(58, 205, 188);
+	height: 2px;
+	background: #fff;
 	content: '';
 	opacity: 0;
-	-webkit-transition: height 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-	-moz-transition: height 0.3s, opacity 0.3s, -moz-transform 0.3s;
-	transition: height 0.3s, opacity 0.3s, transform 0.3s;
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	-moz-transition: opacity 0.3s, -moz-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
 	-webkit-transform: translateY(-10px);
 	-moz-transform: translateY(-10px);
 	transform: translateY(-10px);
 }
-.top-nav ul li a:hover::after,
-.top-nav ul li a:focus::after,.top-nav ul li a.active::after{
-	height: 11px;
+.nav1 a::before {
+	top: 0;
+	-webkit-transform: translateY(-10px);
+	-moz-transform: translateY(-10px);
+	transform: translateY(-10px);
+}
+.nav1 a::after {
+	bottom: 0;
+	-webkit-transform: translateY(10px);
+	-moz-transform: translateY(10px);
+	transform: translateY(10px);
+}
+.nav1 a:hover,
+.nav1 a:focus {
+	color: #fff;
+	outline: none;
+}
+.nav1 a:hover::before,
+.nav1 a:focus::before,
+.nav1 a:hover::after,
+.nav1 a:focus::after {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
-}
-.banner{
 }
 /*----------------------slider----------------------*/
 #slider3,#slider4 {
@@ -1845,15 +1843,8 @@ button.btn1:hover {
   border-color: rgb(58, 205, 188);
 }
 /*----------------------// button style----------------------*/
-/*----------------------responsive-design----------------------*/
-@media(max-width:1440px){
-.top-nav ul li {
-  margin: 0 0.3em;
-}
-.top-middle {
-  left: 10%;
-}
-}
+/*----------------------responsive design----------------------*/
+/*----------------------------large style------------------------------*/
 @media(max-width:1366px){
 .cmnt-icon-left {
   width: 24%;
@@ -1861,51 +1852,13 @@ button.btn1:hover {
 .cmnt-icon-right {
   width: 75%;
 }
-.top-middle {
-  left: 10%;
-  top: -11%;
-}
-.top-middle a {
-  padding: 3em 2em 2em;
-}
-
 }
 @media(max-width:1280px){
 #toTop {
    bottom: 10%;
 }
-.top-middle {
-   left: 11%;
-}
-.top-middle h3 {
-   font-size: 2.8em;
-}
 }
 @media(max-width:1024px){
-.top-middle {
-  width: 22%;
-  left: 4%;
-  top: -14%;
-}
-.top-middle a {
-  padding: 3em 3em 2.9em;
-}
-.top-middle a h3 {
-  font-size: 2.8em;
-}
-.top-nav {
-  width: 55%;
-}
-.top-nav ul li {
-  margin: 0 .3em;
-}
-.top-nav ul li a {
-  font-size: 16px;
-  padding: 0 .4em;
-}
-.top-nav ul li a:hover, .top-nav ul li a.active {
-  padding: 3.5em 0.4em;
-}
 .callbacks_nav {
   left: 4%;
 }
@@ -1940,7 +1893,7 @@ a.callbacks_nav.callbacks2_nav.next {
 .work-grids-info h4 {
 	font-size: 18px;
 }
-content {
+.content {
   padding: 4em 0;
 }
 .category ul {
@@ -2029,20 +1982,10 @@ a.callbacks_nav.callbacks3_nav.next {
 	margin: 0 .97em;
 }
 }
+/*----------------------------medium style------------------------------*/
 @media(max-width:768px){
 .header {
 	padding: 2em 0 0;
-}
-.top-middle {
-  width: 25%;
-  left: 5%;
-  top: -17%;
-}
-.top-middle a {
-  padding: 2.2em 1.5em 2em;
-}
-.top-middle a h3 {
-  font-size: 2.5em;
 }
 .top-nav {
 	width: 4.5%;
@@ -2330,21 +2273,8 @@ a.callbacks_nav.callbacks3_nav.next {
 	width: 17%;
 }
 }
-@media(max-width:667px){
-.top-middle {
-  width: 33%;
-}
 }
 @media(max-width:640px){
-.top-middle {
-  width: 30%;
-}
-.top-middle a {
-  padding: 2.2em 2em 1.5em;
-}
-.top-middle h3 {
-	font-size: 2em;
-}
 .top-nav {
   width: 5.5%;
 }
@@ -2534,19 +2464,6 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 }
 @media(max-width:600px){
-.top-middle {
-  width: 28%;
-  top: -13%;
-}
-.top-middle a {
-  padding: 2em 1.5em 1.1em;
-}
-.top-middle a h2 {
-  font-size: 16px;
-}
-.top-middle a h3 {
-  font-size: 2em;
-}
 .callbacks_nav {
   top: 74%;
 }
@@ -2556,30 +2473,11 @@ a.callbacks_nav.callbacks3_nav.next {
   width: 6.2%;
   margin-right: 1em;
 }
-.top-middle {
-  top: -15%;
-}
-.top-middle a {
-  padding: 2.5em 1em 2em;
-}
 .top-nav span.menu {
   margin: 0em 0 2em;
 }
 }
 @media(max-width:480px){
-body {
-  background-size: 48%;
-}
-.top-middle h3 {
-  font-size: 1.8em;
-}
-.top-middle h2 {
-  font-size: 15px;
-}
-.top-middle {
-	width: 34%;
-   top: -15%;
-}
 .top-nav {
   width: 7.5%;
 }
@@ -2969,19 +2867,24 @@ ul#filters {
   height: 200px;
 }
 }
+/*----------------------------small style------------------------------*/
 @media(max-width:414px){
-.header {
-  padding: 1.8em 0 0;
+.top-logo {
+	width: 280px;
+	margin-top: 8px;
+	left: 15px;
 }
-.top-middle a {
-  padding: 1.7em 1.5em 1em;
+.logo-icon img {
+  width: 45px;
+  height:45px;
 }
-.top-middle a h3 {
-  font-size: 1.5em;
-  letter-spacing: 0px;
+.top-logo a h3 {
+  font-size: 20px;
+  margin: 8px 0px 0px 60px;
 }
-.top-middle a h2 {
-  font-size: 13px;
+.top-logo a h5 {
+  font-size: 12px;
+  margin: 0px 0px 0px 60px;
 }
 .top-nav {
   width: 8.9%;
@@ -3005,26 +2908,6 @@ a.callbacks_nav.callbacks2_nav.prev {
   width: 105%;
 }
 }
-@media(max-width:384px){
-.top-middle h3 {
-  font-size: 1.5em;
-}
-.top-middle h2 {
-  font-size: 13px;
-}
-.top-middle {
- top: -13%;
-}
-.top-nav span.menu {
-  margin: 0 0 1.7em;
-}
-}
-@media(max-width:375px){
-.top-nav {
-  width: 9.5%;
-  margin-right: 0.5em;
-}
-}
 @media(max-width:320px){
 .container {
   padding: 0 8px !important;
@@ -3032,18 +2915,6 @@ a.callbacks_nav.callbacks2_nav.prev {
 .header {
   padding: 1.5em 0 0;
   margin: 1.5em 0 0.8em;
-}
-.top-middle {
-  width: 40%;
-}
-.top-middle a {
-  padding: 1.8em 0.5em 1.8em;
-}
-.top-middle a h3 {
-  font-size: 1.3em;
-}
-.top-middle a h2 {
-  font-size: 11px;
 }
 .top-nav {
   width: 12%;
@@ -3434,14 +3305,14 @@ ul#filters {
 }
 }
 @media(max-width:240px){
-.top-middle h3 {
+.top-logo h3 {
   font-size: 0.8em;
 }
-.top-middle h2 {
+.top-logo h2 {
   font-size: 10px;
   display: block;
 }
-.top-middle {
+.top-logo {
 	width: 47%;
 	left: 36%;
 	padding: 1em 1em 0.5em;

@@ -50,7 +50,9 @@
 				</a>
 			</div>
 			<div class="top-nav">
-				<span class="menu"><img src="images/menu-icon.png" alt=""/></span>
+				<span class="menu">
+					<a id="nav-toggle" href="#"><span></span></a>
+				</span>
 				<ul class="nav1">
 					<li><a href="about.html">團隊介紹</a></li>
 					<li><a href="features.html">專業領域</a></li>
@@ -59,11 +61,19 @@
 				</ul>
 				<!-- script-for-menu -->
 				 <script>
+				 //nav-toggle icon animation
+				 	document.querySelector( "#nav-toggle" )
+  						.addEventListener( "click", function() {
+    					this.classList.toggle( "active" );
+  					});
+  				//end nav-toggle icon animation
+
+  				//menu toggle animation
 				   $( "span.menu" ).click(function() {
 					 $( "ul.nav1" ).slideToggle( 300, function() {
-					 // Animation complete.
 					  });
 					 });
+				//end menu toggle animation
 				</script>
 				<!-- /script-for-menu -->
 			</div>

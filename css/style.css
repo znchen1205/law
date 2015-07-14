@@ -1845,6 +1845,7 @@ button.btn1:hover {
 /*----------------------// button style----------------------*/
 /*----------------------responsive design----------------------*/
 /*----------------------------large style------------------------------*/
+/*
 @media(max-width:1366px){
 .cmnt-icon-left {
   width: 24%;
@@ -1858,6 +1859,7 @@ button.btn1:hover {
    bottom: 10%;
 }
 }
+*/
 @media(max-width:1024px){
 .callbacks_nav {
   left: 4%;
@@ -2274,10 +2276,8 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 }
 }
+/*
 @media(max-width:640px){
-.top-nav {
-  width: 5.5%;
-}
 .banner-right {
   margin-top: 6em;
 }
@@ -2477,13 +2477,33 @@ a.callbacks_nav.callbacks3_nav.next {
   margin: 0em 0 2em;
 }
 }
+*/
+/*----------------------------small style------------------------------*/
 @media(max-width:480px){
+.top-logo {
+	width: 280px;
+	margin-top: 8px;
+	left: 15px;
+}
+.logo-icon img {
+  width: 45px;
+  height:45px;
+}
+.top-logo a h3 {
+  font-size: 20px;
+  margin: 8px 0px 0px 60px;
+}
+.top-logo a h5 {
+  font-size: 12px;
+  margin: 0px 0px 0px 60px;
+}
 .top-nav {
-  width: 7.5%;
+  width: 8.9%;
 }
 .top-nav span.menu {
-  margin: 0 0 2em;
+  margin: 0 0 1.6em;
 }
+
 .banner-left:nth-child(1) {
   padding: 2em 0 6em;
 }
@@ -2867,7 +2887,7 @@ ul#filters {
   height: 200px;
 }
 }
-/*----------------------------small style------------------------------*/
+/*
 @media(max-width:414px){
 .top-logo {
 	width: 280px;
@@ -3350,3 +3370,4 @@ span.menu img {
   display: none;
 }
 }
+*/

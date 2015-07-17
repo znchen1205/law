@@ -1,0 +1,39 @@
+.accordion-wrapper .accordion-control a, .accordion-wrapper .accordion-head a{
+  font-weight:bold;
+  color: #000000;
+  text-decoration:none;
+}
+.accordion-wrapper .accordion-control a:focus, .accordion-wrapper .accordion-head a:focus{
+  text-decoration:none;
+}
+.accordion-wrapper .accordion-control a:hover, .accordion-wrapper .accordion-head a:hover{text-decoration:none;}
+.accordion .accordion-head, .accordion .accordion-body {
+  padding: 10px;
+  border-bottom: 0;
+}
+.accordion .accordion-head a {
+  display: block;
+}
+.accordion .accordion-head a:before, .accordion-control .all-specs:before{
+	content:"\f0fe";
+	color:#990000;
+	font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  padding-right: 5px;
+}
+.accordion .accordion-head a.active:before, .accordion-control .all-specs.active:before{
+	content:"\f146";
+}
+.accordion .accordion-head {
+  border-bottom: 1px solid #e0e0e0;
+}
+.accordion .accordion-body {
+  border-top: 0;
+  font-size: 12px;
+}
+.accordion .accordion-body:last-of-type {
+  position: relative;
+  top: -1px;
+}

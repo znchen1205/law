@@ -20,13 +20,11 @@ body a:hover{
 .header{
 	background-color: #263248;
 	position:relative;
-	height: 90px;
+	height: 100px;
 }
 .top-logo {
-	position: absolute;
-	top: 15px;
-    left: 15px;
-    width: 320px;
+	float: left;
+	padding: 20px 0px;
 }
 .logo-icon img{
 	float: left;
@@ -45,8 +43,6 @@ body a:hover{
 }
 .top-nav {
 	float:right;
-	top: 15px;
-	right: 30px;
 }
 span.menu {
 	display: none;
@@ -1914,9 +1910,6 @@ a.callbacks_nav.callbacks2_nav.next {
 	margin-left: 14px;
 	letter-spacing: 0px;
 }
-.video {
-  padding: 0 0 5em;
-}
 a.callbacks_nav.callbacks3_nav.next {
   left: 14.9%;
 }
@@ -1991,30 +1984,20 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 /*----------------------------medium style------------------------------*/
 @media(max-width:768px){
-.header {
-	padding: 2em 0 0;
-}
-.top-nav {
-	width: 4.5%;
-	margin-right: 1em;
-}
 .top-nav span.menu {
 	display: block;
 	position: relative;
 	cursor: pointer;
-	margin: 0.2em 0 2em;
+	margin: 25px auto;
 }
 .top-nav  ul.nav1{
 	display:none;
 	padding: 0;
-	margin:0;
+	margin:30px 0px;
 	z-index: 999;
 	position: absolute;
 	width: 100%;
 	left: 0;
-}
-.nav1 span {
-	display: none;
 }
 .top-nav ul.nav1 li {
 	display: block;
@@ -2039,7 +2022,7 @@ a.callbacks_nav.callbacks3_nav.next {
 	padding: 1em 0;
 	margin-bottom: 1em;
 }
-/*---------------------------nav-toggle--------------------------------*/
+/*---------------------------nav icon--------------------------------*/
 #nav-toggle {
 	cursor: pointer;
 	padding: 10px 35px 16px 0px;
@@ -2076,7 +2059,7 @@ a.callbacks_nav.callbacks3_nav.next {
 #nav-toggle.active span:after {
   transform: rotate(-45deg);
 }
-/*-------------------------//nav-toggle--------------------------------*/
+/*-------------------------//nav icon--------------------------------*/
 .banner-left {
 	float: left;
 	width: 60%;
@@ -2515,6 +2498,7 @@ a.callbacks_nav.callbacks3_nav.next {
   top: 74%;
 }
 }
+/*
 @media(max-width:568px){
 .top-nav {
   width: 6.2%;
@@ -2524,12 +2508,14 @@ a.callbacks_nav.callbacks3_nav.next {
   margin: 0em 0 2em;
 }
 }
+*/
 /*----------------------------small style------------------------------*/
 @media(max-width:480px){
-.top-logo {
-	width: 280px;
-	margin-top: 8px;
-	left: 15px;
+.header	{
+	height: 75px;
+}
+.top-logo	{
+	padding: 15px 0px;
 }
 .logo-icon img {
   width: 45px;
@@ -2543,11 +2529,11 @@ a.callbacks_nav.callbacks3_nav.next {
   font-size: 12px;
   margin: 0px 0px 0px 60px;
 }
-.top-nav {
-  width: 8.9%;
-}
 .top-nav span.menu {
-  margin: 0 0 1.6em;
+	margin: 15px auto;
+}
+.top-nav  ul.nav1{
+	margin: 20px auto;
 }
 .banner-left:nth-child(1) {
   padding: 2em 0 6em;

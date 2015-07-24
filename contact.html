@@ -23,14 +23,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- js -->
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-<!-- //js -->	
+<!-- //js -->
 <!-- start-smoth-scrolling-->
 <script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
+			$(".scroll").click(function(event){
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 			});
@@ -42,35 +42,51 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--header-->
 	<div class="header">
 		<div class="container">
-			<div class="top-middle">
+			<div class="top-logo">
 				<a href="index.html">
-					<h3>OttoMayer</h3>
-				</a>	
+					<span class="logo-icon">
+						<img src="images/logo-icon.svg" alt=""/>
+					</span>
+					<span class="logo-title">
+						<h3>奧德梅雅法律事務所</h3>
+						<h5>OttoMayer Law Office</h5>
+					</span>
+					<div class="clearfix"></div>
+				</a>
 			</div>
 			<div class="top-nav">
-				<span class="menu"><img src="images/menu-icon.png" alt=""/></span>		
+				<span class="menu">
+					<a id="nav-toggle" href="#"><span></span></a>
+				</span>
 				<ul class="nav1">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="features.html">Features</a></li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html" class="active" >Contact Us</a></li>
+					<li><a href="about.html">團隊介紹</a></li>
+					<li><a href="features.html">專業領域</a></li>
+					<li><a href="blog.html">法律教室</a></li>
+					<li><a href="contact.html" >聯絡我們</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>
+				 //nav-toggle icon animation
+				 	document.querySelector( "#nav-toggle" )
+  						.addEventListener( "click", function() {
+    					this.classList.toggle( "active" );
+  					});
+  				//end nav-toggle icon animation
+
+  				//menu toggle animation
 				   $( "span.menu" ).click(function() {
 					 $( "ul.nav1" ).slideToggle( 300, function() {
-					 // Animation complete.
 					  });
 					 });
+				//end menu toggle animation
 				</script>
 				<!-- /script-for-menu -->
-			</div>	
-			<div class="clearfix"> </div>
-		</div>	
+			</div>
+
+		</div>
 	</div>
 	<!--//header-->
+
 	<!--contact-->
 	<div class="contact">
 		<div class="container">
@@ -104,7 +120,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<p><span class="mail"></span><a href="mailto:example@mail.com">mail@example.com</a></p>
 				</div>
 				<div class="clearfix"> </div>
-			</div>		
+			</div>
 			<div class="contact-form">
 				<h4>CONTACT FORM</h4>
 				<form>
@@ -114,18 +130,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<textarea type="text"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
 					<button class="btn1">Submit</button>
 				</form>
-			</div>	
+			</div>
 		</div>
 		<div class="container">
 			<div class="work-title">
 				<h3>FIND<span>US</span></h3>
 			</div>
 		</div>
-		<div class="map">	
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205251.8961757029!2d-82.55659211602483!3d36.50439253757311!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885a856b70074b97%3A0x6f9cc0d30bcc841f!2sKingsport%2C+TN%2C+USA!5e0!3m2!1sen!2sin!4v1433743549812" frameborder="0" style="border:0"></iframe>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7365.4549395582835!2d120.28550990000001!3d22.626650000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z6auY6ZuE5Zyw5pa55rOV6Zmi!5e0!3m2!1szh-TW!2stw!4v1437731860748" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 		</div>
 	</div>
 	<!--//contact-->
+
 	<!--footer-->
 	<div class="footer">
 		<div class="container">
@@ -147,15 +164,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					containerID: 'toTop', // fading element id
 					containerHoverID: 'toTopHover', // fading element hover id
 					scrollSpeed: 1200,
-					easingType: 'linear' 
+					easingType: 'linear'
 				};
 				*/
-				
 				$().UItoTop({ easingType: 'easeOutQuart' });
-				
 			});
 		</script>
 		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!--//smooth-scrolling-of-move-up-->
 </body>
-</html>	
+</html>

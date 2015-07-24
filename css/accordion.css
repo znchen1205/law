@@ -1,39 +1,58 @@
-.accordion-wrapper .accordion-control a, .accordion-wrapper .accordion-head a{
-  font-weight:bold;
-  color: #000000;
-  text-decoration:none;
+.accordion-container {
+  width: 100%;
 }
-.accordion-wrapper .accordion-control a:focus, .accordion-wrapper .accordion-head a:focus{
-  text-decoration:none;
+.accordion-wrapper {
+  
 }
-.accordion-wrapper .accordion-control a:hover, .accordion-wrapper .accordion-head a:hover{text-decoration:none;}
-.accordion .accordion-head, .accordion .accordion-body {
-  padding: 10px;
-  border-bottom: 0;
-}
-.accordion .accordion-head a {
-  display: block;
-}
-.accordion .accordion-head a:before, .accordion-control .all-specs:before{
-	content:"\f0fe";
-	color:#990000;
-	font-family: FontAwesome;
-  font-style: normal;
-  font-weight: normal;
-  text-decoration: inherit;
-  padding-right: 5px;
-}
-.accordion .accordion-head a.active:before, .accordion-control .all-specs.active:before{
-	content:"\f146";
-}
-.accordion .accordion-head {
-  border-bottom: 1px solid #e0e0e0;
-}
-.accordion .accordion-body {
-  border-top: 0;
-  font-size: 12px;
-}
-.accordion .accordion-body:last-of-type {
+.accordion-header {
   position: relative;
-  top: -1px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #F2E2AE;
+}
+.accordion-header a {
+  display: inline-block;
+  color: #4C4C4C;
+  font-size:16px;
+  text-decoration:none;
+  padding: 10px 0px 10px 0px;
+}
+.accordion-header a span {
+  display: inline-block;
+  width: 55px;
+  background-color: #EA6838;
+  padding: 5px;
+  font-size: 12px;
+  color: #fff;
+  margin-right: 15px;
+}
+.accordion-arrow {
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  -webkit-transition: all 0.1s linear;
+  -moz-transition: all 0.1s linear;
+  -ms-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+.open.accordion-arrow {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.accordion-arrow a {
+    color: #4C4C4C;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+}
+.accordion-body{
+  padding:10px 15px 10px 70px;
+  border-top: 3px solid #f5f5f5;
+  background-color: #fdfdfd;
+  color: #4C4C4C;
+  display:none;
+  font-size: 14px;
 }

@@ -1,18 +1,47 @@
-$(document).ready(function() {
+$(function () {
 
-	//Default Action
-	$(".tab-content").hide(); //Hide all content
-	$("ul.tab-nav li:first").addClass("active").show(); //Activate first tab
-	$(".tab-content:first").show(); //Show first tab content
+    /*
+     * Tabs
+     */
+    $('#tab').each(function () {
 
-	//On Click Event
-	$("ul.tab-nav li").click(function() {
-		$("ul.tab-nav li").removeClass("active"); //Remove any "active" class
-		$(this).addClass("active"); //Add "active" class to selected tab
-		$(".tab-content").hide(); //Hide all tab content
-		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
-		$(activeTab).show(); //Fade in the active content
-		return false;
-	});
+        
+        // 將Tab各元素jQuery物件化
+        var $tabList    = $(this).find('.tabs-nav'),   // Tab的列表
+            $tabAnchors = $tabList.find('a'),          // Tab(鏈結)
+            $tabPanels  = $(this).find('.tab-content'); // Panel
+
+        
+        //點擊Tab時的處理
+        //傳入作為參數的事件物件
+        $tabList.on('click', 'a', function (event) {
+
+            // 取消點擊鏈結的預設動作
+            event.preventDefault();
+
+            // 將點擊的Tab轉為jQuery物件
+            var $this = $(this);
+
+            // 如果是已被選取的Tab，則結束處理
+            if ($this.hasClass('active')) {
+                return;
+            }
+
+            // 取消所有Tab的選擇狀態
+            // 對被點擊的Tab附加狀態
+            $tabAnchors.removeClass('active');
+            $this.addClass('active');
+
+            // 將所有Panel設定為不顯示
+            // 顯示對應點擊Tab的Panel
+            $tabPanels.hide();
+            $($this.attr('href')).show();
+
+        });
+
+        // 初始Tab的選擇狀態
+        $tabAnchors.eq(0).trigger('click');
+
+    });
 
 });

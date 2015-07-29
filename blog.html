@@ -10,6 +10,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <title>OttoMayer</title>
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Serif|Open+Sans:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/timeline.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+
 <!--web-font-->
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -23,14 +30,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- js -->
 <script src="js/jquery.min.js"></script>
 <script src="js/modernizr.custom.js"></script>
-<!-- //js -->	
+<!-- //js -->
 <!-- start-smoth-scrolling-->
 <script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>	
+<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript" src="js/modernizr.custom.53451.js"></script>
 <script type="text/javascript">
 		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event){		
+			$(".scroll").click(function(event){
 				event.preventDefault();
 				$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 			});
@@ -42,47 +49,133 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<!--header-->
 	<div class="header">
 		<div class="container">
-			<div class="top-middle">
+			<div class="top-logo">
 				<a href="index.html">
-					<h3>OttoMayer</h3>
-				</a>	
+					<span class="logo-icon">
+						<img src="images/logo-icon.svg" alt=""/>
+					</span>
+					<span class="logo-title">
+						<h3>奧德梅雅法律事務所</h3>
+						<h5>OttoMayer Law Office</h5>
+					</span>
+					<div class="clearfix"></div>
+				</a>
 			</div>
 			<div class="top-nav">
-				<span class="menu"><img src="images/menu-icon.png" alt=""/></span>		
+				<span class="menu">
+					<a id="nav-toggle" href="#"><span></span></a>
+				</span>
 				<ul class="nav1">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about.html">About Us</a></li>
-					<li><a href="features.html">Features</a></li>
-					<li><a href="blog.html" class="active">Blog</a></li>
-					<li><a href="portfolio.html">Portfolio</a></li>
-					<li><a href="contact.html" >Contact Us</a></li>
+					<li><a href="about.html">團隊介紹</a></li>
+					<li><a href="features.html">專業領域</a></li>
+					<li><a href="blog.html">法律教室</a></li>
+					<li><a href="contact.html" >聯絡我們</a></li>
 				</ul>
 				<!-- script-for-menu -->
 				 <script>
+				 //nav-toggle icon animation
+				 	document.querySelector( "#nav-toggle" )
+  						.addEventListener( "click", function() {
+    					this.classList.toggle( "active" );
+  					});
+  				//end nav-toggle icon animation
+
+  				//menu toggle animation
 				   $( "span.menu" ).click(function() {
 					 $( "ul.nav1" ).slideToggle( 300, function() {
-					 // Animation complete.
 					  });
 					 });
+				//end menu toggle animation
 				</script>
 				<!-- /script-for-menu -->
-			</div>	
-			<div class="clearfix"> </div>
-		</div>	
-	</div>
-	<!--//header-->
-	<!--blog-->
-	<div class="blog">
-		<div class="container">
-			<div class="blog-text">
-				<h1>404</h1>
-				<p>opps! some thing goes wrong</p> 
-				<a href="index.html" >Go Back</a>
-				<span> </span>
 			</div>
+
 		</div>
 	</div>
-	<!--//blog-->
+	<!--//header-->
+
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="images/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 1</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="images/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 2</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde?</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="images/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 3</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, obcaecati, quisquam id molestias eaque asperiores voluptatibus cupiditate error assumenda delectus odit similique earum voluptatem doloremque dolorem ipsam quae rerum quis. Odit, itaque, deserunt corporis vero ipsum nisi eius odio natus ullam provident pariatur temporibus quia eos repellat consequuntur perferendis enim amet quae quasi repudiandae sed quod veniam dolore possimus rem voluptatum eveniet eligendi quis fugiat aliquam sunt similique aut adipisci.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Jan 24</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="images/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 4</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 14</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-location">
+				<img src="images/cd-icon-location.svg" alt="Location">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Title of section 5</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum.</p>
+				<a href="#0" class="cd-read-more">Read more</a>
+				<span class="cd-date">Feb 18</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="images/cd-icon-movie.svg" alt="Movie">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>Final Section</h2>
+				<p>This is the content of the last section</p>
+				<span class="cd-date">Feb 26</span>
+			</div> <!-- cd-timeline-content -->
+		</div> <!-- cd-timeline-block -->
+	</section> <!-- cd-timeline -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/timeline.js"></script>
+	<!-- Resource jQuery -->
+
 	<!--footer-->
 	<div class="footer">
 		<div class="container">
@@ -104,15 +197,15 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					containerID: 'toTop', // fading element id
 					containerHoverID: 'toTopHover', // fading element hover id
 					scrollSpeed: 1200,
-					easingType: 'linear' 
+					easingType: 'linear'
 				};
 				*/
-				
 				$().UItoTop({ easingType: 'easeOutQuart' });
-				
 			});
 		</script>
 		<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 	<!--//smooth-scrolling-of-move-up-->
+
+
 </body>
-</html>	
+</html>

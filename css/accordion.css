@@ -28,6 +28,7 @@
   margin: 0px 15px 0px 10px;
 }
 .accordion-arrow {
+  display: inline-block;
   position: absolute;
   top: 0px;
   right: 20px;

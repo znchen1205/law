@@ -3,7 +3,10 @@
 Primary style
 
 -------------------------------- */
-html * {
+body {
+  background-color: #e9f0f5;
+}
+/*html * {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -34,7 +37,7 @@ img {
 h1, h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-}
+}*/
 
 /* --------------------------------
 
@@ -59,7 +62,7 @@ Modules - reusable parts of our design
 Main components
 
 -------------------------------- */
-header {
+/*header {
   height: 200px;
   line-height: 200px;
   text-align: center;
@@ -79,7 +82,7 @@ header h1 {
     font-size: 24px;
     font-size: 1.5rem;
   }
-}
+}*/
 
 #cd-timeline {
   position: relative;

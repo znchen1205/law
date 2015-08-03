@@ -873,12 +873,23 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 .about-team {
 	padding: 5em 0;
+
+	display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
 }
 .about-team-grids {
   background: #fff;
   padding: 2em 1em;
   margin-left: 5px;
-  width: 24.5%;
+  /*width: 24.5%;*/
+
+  -webkit-flex: 1;
+   -moz-flex: 1;
+   -ms-flex: 1;
+   flex: 1;
 }
 .about-team-grids img {
 	width: 100%;
@@ -985,7 +996,7 @@ a.callbacks_nav.callbacks3_nav.next {
 .features-icons {
 	padding-top: 5em;
 }
-a.ft-icons:hover {
+/*a.ft-icons:hover {
 	border: 2px solid rgb(58, 222, 203);
 	padding: 2.7em 2em;
 	border-radius: 2px;
@@ -997,7 +1008,7 @@ a.ft-icons:hover {
 	-moz-transition:  0.5s all;
 	-o-transition:  0.5s all;
 	transition:  0.5s all;
-}
+}*/
 .ftrs-icon-grids h5 {
 	color: #37393d;
 	font-size: 18px;
@@ -1005,12 +1016,14 @@ a.ft-icons:hover {
 	margin: 1.5em 0 .8em;
 	letter-spacing: -1px;
 }
-.ftrs-icon-grids p {
+.ftrs-icon-grids ul li {
   color: #999;
   font-size: 13px;
   margin: 0px auto;
   line-height: 1.8em;
   width: 80%;
+  text-align: center;
+  list-style: none;
 }
 /*----------------------//features----------------------*/
 /*----------------------blog----------------------*/
@@ -2205,7 +2218,8 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 .about-text-left {
 	float: left;
-    width: 30%;
+	width: 50%;
+    /*width: 30%;*/
 }
 .about-text {
   padding: 3em 0;
@@ -2215,7 +2229,7 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 .about-team-grids {
 	float: left;
-	width: 24.3%;
+	/*width: 24.3%;*/
 	padding: 1em 0.5em;
 }
 .about-team-grids h4 {
@@ -2743,9 +2757,13 @@ a.callbacks_nav.callbacks3_nav.next {
 }
 .about-team {
   padding: 3em 0 2em;
+
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .about-team-grids {
-  width: 48%;
+  /*width: 48%;*/
+  min-width: 150px;
   padding: 2em 1em;
   margin: 0 0 8px 8px;
 }

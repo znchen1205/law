@@ -918,10 +918,11 @@ a.callbacks_nav.callbacks3_nav.next {
 	margin: 0;
 	letter-spacing: 0px;
 }
-.about-team-grids p {
+.about-team-grids ul {
   color: #999;
   font-size: 13px;
   line-height: 1.8em;
+  padding-left: 20px;
 }
 .about-skills {
 	background: #fff;

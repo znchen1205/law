@@ -1,0 +1,230 @@
+/*----------------------contact----------------------*/
+.contact {
+	background: #f3f3f3;
+	padding: 5em 0 0;
+	margin-bottom: 1em;
+}
+.contact h4 {
+	font-size: 19px;
+	font-weight: 600;
+	color: #37393d;
+	margin: 0 0 1em 0;
+}
+.contact-infom {
+  padding-top: 4em;
+}
+.map {
+    margin-top: 5em;
+}
+.map iframe {
+  width: 100%;
+  height: 340px;
+}
+.address {
+  padding: 3em 0;
+}
+.address p {
+  color: #999;
+  font-size: 13px;
+  line-height:1.8em;
+}
+.address-grids:nth-child(2) p {
+  margin: 0 0 0.8em;
+}
+/*.address ul li{
+	display: inline-block;
+}*/
+.address p span.home {
+	background: url(../images/icons-sprite.png) no-repeat -175px -35px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.address p span.phn {
+	background: url(../images/icons-sprite.png) no-repeat -175px -56px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.address p span.fax {
+	background: url(../images/icons-sprite.png) no-repeat -174px -78px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.address p span.mail {
+	background: url(../images/icons-sprite.png) no-repeat -173px -102px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	margin-right: 12px;
+	vertical-align: middle;
+}
+.address a {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+/*.address a {
+  color: rgb(58, 205, 188);
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: .5s all;
+  font-weight: 400;
+  text-decoration: none;
+}
+.address a:hover {
+	color:#555555;
+	text-decoration: none;
+}*/
+.contact-infom p {
+  color: #999;
+  font-size: 14px;
+  margin: 1em 0 0;
+  line-height: 1.8em;
+}
+.contact-form {
+	padding-bottom: 5em;
+}
+.contact-form input[type="text"] {
+	display: inline-block;
+	background:  #fff;
+	border: 1px solid #67686b;
+	width: 32%;
+	outline: none;
+	padding: 10px 15px 10px 15px;
+	font-size: 13px;
+	color: #999;
+	margin-bottom: 1.5em;
+}
+.contact-form input[type="email"] {
+	display: inline-block;
+	background:  #fff;
+	border: 1px solid #67686b;
+	width: 32%;
+	outline: none;
+	padding: 10px 15px 10px 15px;
+	font-size: 13px;
+	color: #999;
+	margin: 0 1.25em;
+}
+.contact-form textarea {
+	background: #fff;
+	border: 1px solid #67686b;
+	width: 100%;
+	display: block;
+	height: 150px;
+	outline: none;
+	font-size: 13px;
+	color: #999;
+	resize: none;
+	padding: 10px 15px 10px 15px;
+	margin-bottom: 1em;
+}
+.btn1 {
+	border: 1px solid #67686b;
+	color: #67686b;
+	background: #fff;
+	cursor: pointer;
+	padding: 9px 0;
+	width: 11%;
+	border-radius: 4px;
+	display: inline-block;
+	margin: 1em 0 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 400;
+	outline: none;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+button.btn1:hover {
+  color: #fff;
+  background: rgb(58, 205, 188);
+  border-color: rgb(58, 205, 188);
+}
+/*---------------------- //contact ----------------------*/
+
+@media(max-width:768px){
+.address-grids {
+	float: left;
+	width: 33.33%;
+}
+.contact-form input[type="text"] {
+	width: 31.35%;
+	font-size: 14px;
+}.contact-form input[type="email"] {
+	font-size: 14px;
+}
+.contact-form textarea{
+	font-size: 14px;
+}
+.btn1{
+	width: 17%;
+}
+}
+
+
+@media(max-width:480px){
+	.contact {
+  padding: 2em 0 0;
+}
+.contact-infom {
+  padding-top: 3em;
+}
+.contact h4 {
+  font-size: 17px;
+}
+.contact-infom p {
+  font-size: 13px;
+}
+.address {
+  padding: 1.5em 0 0;
+}
+.address-grids {
+  float: none;
+  width: 100%;
+    margin-bottom: 2em;
+}
+.contact-form input[type="text"] {
+  width: 100%;
+  margin-bottom: 0.5em;
+  font-size: 13px;
+  padding: 7px 10px;
+}
+.contact-form input[type="email"] {
+  width: 100%;
+  margin: 0 0 .5em;
+  font-size: 13px;
+  padding: 7px 10px;
+}
+.contact-form textarea {
+  font-size: 13px;
+  height: 100px;
+  margin-bottom: 0.5em;
+  padding: 7px 10px;
+}
+.btn1 {
+  width: 20%;
+  font-size: 12px;
+  padding: 6px 0;
+  margin: 0;
+  border-radius: 2px;
+}
+.contact-form {
+  padding-bottom: 3em;
+}
+.map {
+  margin-top: 3em;
+}
+.map iframe {
+  height: 200px;
+}
+}

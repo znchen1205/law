@@ -48,7 +48,7 @@
 	padding: 3em 0;
 }
 .service-choose-shadow {
-	padding: 2em 0.5em;
+	padding: 1em;
 	background: #f3f3f3;
 	margin: 5em 0 0;
 	box-shadow: 15px -11px rgba(236, 234, 234, 0.76);
@@ -87,26 +87,20 @@
 .service {
   padding: 3em 0 1em;
 }
+.service-info {
+  padding: 3em 1em;
+}
 .service-info-item {
   padding-top: 3.5em;
 }
 .service-choose-shadow {
+  padding: 0 1em;
   margin: 5em 1em;
 }
 .service-choose-text {
 	float: left;
 	width: 50%;
-}
-.service-choose-text h5 {
-	font-size: 14px;
-}
-.service-choose-text:nth-child(3) {
-	padding-left: 1em;
-	margin-top: 2em;
-  width: 100%;
-}
-.service-choose-text h4 {
-   margin: 1em 0 0.5em;
+  margin-top: 2em;
 }
 }
 
@@ -126,5 +120,13 @@
 }
 .service-info-item {
   padding-top: 3em;
+}
+.service-choose {
+  margin-top: 2em;
+  padding: 0;
+}
+.service-choose-text {
+  float: left;
+  width: 100%;
 }
 }

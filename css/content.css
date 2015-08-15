@@ -1,9 +1,8 @@
-/*----------------------single-page----------------------*/
 .single-page{
   background: #fff;
-  padding: 5em 0;
+  padding: 5em 0 0;
 }
-.sngl-title h3 a {
+/*.sngl-title h3 a {
   text-decoration: none;
   transition:.5s all;
 }
@@ -21,20 +20,23 @@
 }
 .sngl-title {
   margin-bottom: 5em;
+}*/
+.single-page-left {
+	background-color: #0f0;
+	padding: 3em 0;
 }
 .single-page-left  img {
   width: 100%;
 }
 .single-page-info h5 {
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 1em;
   color: rgb(58, 205, 188);
   margin: 1em 0;
   line-height: 1.6;
 }
 .single-page p {
-	 color: #999;
-  font-size: 13px;
+  color: #999;
+  font-size: 1em;
   line-height: 1.8em;
 }
 .comment-icons {
@@ -91,34 +93,13 @@
 	text-decoration:none;
 	transition:.5s all;
 }
-.category ul{
-	margin: 0;
-	padding: 0 0 0 1em;
-}
-.category ul li{
-	display: inline-block;
-	background: url(../images/icon3.png)no-repeat 0px 2px;
-	padding-left: 2em;
-	margin: 1.5em 0 0;
-}
-.category ul li:nth-child(1) {
-  margin: 0;
-}
-.category ul li a {
-	color: #999;
-  font-size: 13px;
-}
-.category ul li a:hover{
-	color: rgb(58, 205, 188);
-	text-decoration: none;	
-}
 .recent-posts {
 	margin: 4em 0;
 }
 .recent-posts-info {
 	margin-bottom: 4em;
 }
-.read-more a {
+/*.read-more a {
 	font-size: 14px;
 	font-weight: 600;
 	color: rgb(58, 205, 188);
@@ -133,7 +114,7 @@
 	padding: 8px 10px;
 	background: rgb(58, 205, 188);
 	border-radius: 4px;
-}
+}*/
 .posts-left{
 	float:left;
 	width: 47%;
@@ -170,14 +151,8 @@
   font-size: 13px;
   margin: .5em 0 1em;
 }
-.comments-info {
-	margin: 3em 0 0;
-}
-.comments-info.cmnts-middle {
+.cmnts-middle {
   margin: 4em 0;
-}
-.comments-info p {
-	margin: 1em 0;
 }
 .cmnt-icon-left {
 	float: left;
@@ -207,12 +182,6 @@
 .admin-text {
 	background:#f3f3f3;
 	padding: 2em;
-}
-.admin-text h5 {
-	font-size: 15px;
-	margin: 0 0 1em 0;
-	font-weight: 600;
-	color: #37393d;
 }
 .admin-text-left {
 	float: left;
@@ -255,137 +224,10 @@
 	margin: .5em 0;
 	color: #1C90F4;
 }
-.response {
-  margin: 4em 0;
-}
-.response-info {
-	background: #f3f3f3;
-	padding: 2em;
-	border-bottom: 1px dotted rgb(204, 200, 200);
-}
-.response-text h5 {
-	font-size: 15px;
-	font-weight: 600;
-	margin: 0 0 1em 0;
-	color: #fff;
-}
-.response-text-left h5 a {
-	text-decoration: none;
-	color: #37393d;
-}
-.response-text-left h5 a:hover{
-	text-decoration: none;
-	color:rgb(58, 205, 188);
-	transition:.5s all;
-}
-.response-text-left {
-	float: left;
-	width: 11%;
-}
-.response-text-left h5{
-	color: #fff;
-	font-weight: 600;
-	font-size: 15px;
-	margin: 1em 0 0 0;
-}
-.response-text-right {
-	float: right;
-	width: 86%;
-}
-.response-text-right p {
-	color: #999;
-	font-size: 13px;
-	margin: 0 0 1em;
-}
-.response-text-right ul{
-	padding:0;
-	text-align: right;
-}
-.response-text-right ul li{
-	display:inline-block;
-	color: #ccc;
-	font-size: 12px;
-	margin-right: 1em;
-}
-.response-text-right ul li a{
-	color:rgb(58, 205, 188);
-	font-size: 14px;
-}
-.response-text-right ul li a:hover{
-	color:#67686b;
-	transition:.5s all;
-	text-decoration:none;
-}
-.coment-form input[type="text"] {
-	display: block;
-	background: #F3F3F3;
-	color: #ABABAB;
-	border: none;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	-ms-border-radius: 4px;
-	width: 100%;
-	margin-bottom: 5px;
-	outline: none;
-	font-size: 13px;
-	font-weight: 500;
-	padding: 10px 15px;
-}
-.coment-form input[type="email"] {
-	display: block;
-	background: #F3F3F3;
-	color: #ABABAB;
-	border: none;
-	border-radius: 4px;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	-o-border-radius: 4px;
-	-ms-border-radius: 4px;
-	width: 100%;
-	margin-bottom: 5px;
-	outline: none;
-	font-size: 13px;
-	font-weight: 500;
-	padding: 10px 15px;
-}
-.coment-form textarea {
-	background: #F3F3F3;
-	border: none;
-	margin-bottom: 5px;
-	width: 100%;
-	display: block;
-	height: 150px;
-	outline: none;
-	font-size: 13px;
-	color: #ABABAB;
-	font-weight: 500;
-	resize: none;
-	padding: 10px 15px;
-}
-.coment-form input[type="submit"] {
-	background: #F3F3F3;
-	padding: .8em 0;
-	border: none;
-	width: 100%;
-	margin-top: 1em;
-	font-size: 13px;
-	color: #67686b;
-	font-weight: 500;
-	letter-spacing: 0.5px;
-	outline: none;
-	transition: .5s all;
-}
-.coment-form input[type="submit"]:hover{
-	color: #fff;
-	background:rgb(58, 205, 188);
-	outline: none;
-}
-/*----------------------//single-page----------------------*/
+
 
 @media(max-width:768px){
-	.single-page {
+.single-page {
   padding: 3em 0;
 }
 .comment-icons ul li a {
@@ -394,27 +236,8 @@
 .comment-icons ul li {
 	font-size: 13px;
 }
-.admin-text h5 {
-	font-size: 14px;
-}
 .admin-text-right span {
 	font-size: 14px;
-}
-.response-text-right ul li {
-	font-size: 13px;
-}
-.response-text-left h5 {
-	font-size: 14px;
-}
-.category {
-	margin-top: 4em;
-}
-.category ul {
-	padding: 0 0 0 1em;
-}
-.category ul li {
-	padding-left: 1em;
-	display: block;
 }
 .recent-posts-info {
 	margin-bottom: 0;
@@ -426,34 +249,18 @@
 	margin: 4em 0;
 	display: inline-block;
 }
-.comments {
-	display: inline-block;
-}
-.comments-info {
-	margin: 2em 0 0;
-}
-.comments-info {
-	margin: 2em 0 0;
-	float: left;
-	width: 32.5%;
-}
+/*
 .cmnt-icon-left {
 	width: 31%;
 }
 .cmnt-icon-right {
 	width: 63%;
-}
-.comments-info p {
-	margin: 1em 0 0;
-}
-.comments-info.cmnts-middle {
-	margin: 2em 0.5em 0;
-}
+}*/
 }
 
 
 @media(max-width:480px){
-	.single-page {
+.single-page {
   padding: 3em 0 2em;
 }
 .sngl-title {
@@ -491,31 +298,6 @@
 .admin-text-right span {
   font-size: 13px;
 }
-.response {
-  margin: 3em 0;
-}
-.response-info {
-    padding: 2em 1em 1em;
-}
-.response-text-left {
-  width: 15%;
-}
-.response-text-right {
-  width: 81%;
-}.response-text-left h5 {
-  font-size: 13px;
-}
-.response-text-right ul li {
-  letter-spacing: 0;
-}
-.coment-form textarea {
-  height: 125px;
-  margin-bottom: 0;
-}
-.coment-form input[type="submit"] {
-  letter-spacing: 0;
-  padding: .6em 0;
-}
 .posts-left {
   width: 32%;
 }
@@ -533,11 +315,8 @@
 .read-more a {
   font-size: 13px;
 }
-.comments-info {
-  margin: 2em 0 0;
-  width: 48%;
-}
-.comments-info.cmnts-middle {
+ /*
+ .cmnts-middle {
   margin: 2em 0.5em 0;
 }
 .cmnt-icon-left {
@@ -545,5 +324,5 @@
 }
 .cmnt-icon-right {
   width: 59%;
-}
+}*/
 }

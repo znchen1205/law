@@ -1,6 +1,6 @@
 .contact {
 	background: #f3f3f3;
-	padding: 5em 0 0;
+	padding: 3em 0;
 }
 .contact-info h4 {
 	font-size: 20px;
@@ -9,20 +9,21 @@
 	margin: 0 0 1em 0;
 }
 .contact-info {
-  padding-top: 3em;
+  padding: 3em 1em;
 }
 .contact-info p {
   color: #999;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8em;
 }
 .contact-detail {
-  padding: 1em 0 4em;
+  padding: 3em 1em 1em;
 }
 .contact-detail-grids {
-	margin-top: 3em;
+	margin-bottom: 2em;
 }
 .contact-detail-grids h4{
+	font-size: 16px;
 	font-weight: 600;
 }
 .contact-detail-grids span{
@@ -36,7 +37,7 @@
 	color: rgb(58, 205, 188);
 }
 .contact-form {
-	padding-bottom: 5em;
+	padding: 3em 1em 5em;
 }
 .contact-form h4 {
 	font-size: 20px;
@@ -72,7 +73,7 @@
 	padding: 10px;
 	margin-bottom: 1em;
 }
-.btn1 {
+.submit_btn {
 	color: #fff;
 	background: rgb(58, 205, 188);
 	cursor: pointer;
@@ -90,7 +91,7 @@
 	transition: all 0.5s;
 }
 .map {
-    margin-top: 5em;
+    margin-top: 3em;
 }
 .map iframe {
   width: 100%;
@@ -108,27 +109,38 @@
 
 @media(max-width:480px){
 .contact {
-  padding: 2em 0 0;
+  padding: 2em 0;
+}
+.contact-info {
+  padding: 2em 0.5em;
+}
+.contact-info h4 {
+  font-size: 16px;
+}
+.contact-info p {
+  font-size: 14px;
 }
 .contact-detail {
-  padding: 1em 0 3em;
+  padding: 2em 0.5em;
 }
 .contact-detail-grids {
   float: none;
   width: 100%;
-  margin-bottom: 2em;
+}
+.contact-form {
+  padding: 2em 0.5em 4em;
+}
+.contact-form h4 {
+  font-size: 16px;
 }
 .contact-form input {
   width: 100%;
   margin-bottom: 0.5em;
-  font-size: 13px;
+  font-size: 14px;
   padding: 10px;
 }
-.contact-form {
-  padding-bottom: 3em;
-}
 .map {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 .map iframe {
   height: 200px;

@@ -1,0 +1,145 @@
+.article {
+  background: #fff;
+  padding: 3em 0;
+}
+.article-left {
+padding: 3em 1em;
+}
+.article-left  img {
+  width: 100%;
+  margin-bottom: 1em;
+}
+.article-content h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgb(58, 205, 188);
+  margin-bottom: 1em;
+}
+.article-content h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  margin-top: 2em;
+}
+.article-content p {
+	color: #999;
+    font-size: 16px;
+    line-height: 1.8em;
+    text-align: justify;
+}
+.article-law {
+	background:#f3f3f3;
+	margin: 3em 0 2em;
+	padding: 1em 2em;
+	border-left: 5px solid rgb(58, 205, 188);
+}
+.article-law p {
+	color: #999;
+    font-size: 16px;
+    line-height: 1.8em;
+	margin-top: 2em;
+}
+.article-tags {
+	border-top: 1px dashed rgb(58, 205, 188);
+	border-bottom: 1px dashed rgb(58, 205, 188);
+	padding: 1em 0;
+	margin-bottom: 4em;
+	text-align: right;
+}
+.article-tags ul li {
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 1em;
+	color: #999;
+	font-size: 14px;
+}
+.article-tags ul li i{
+	color: rgb(58, 205, 188);
+	margin-right: 0.5em;
+}
+.article-author {
+	background:#f3f3f3;
+	padding: 2em;
+}
+.article-author-left {
+	float: left;
+	width: 15%;
+}
+.article-author-right {
+	float: right;
+	width: 83%;
+	color: #999;
+	font-size: 14px;
+}
+.article-author-right span a {
+	color: rgb(58, 205, 188);
+	text-decoration:none;
+}
+.article-coment {
+	padding: 3em, 0;
+}
+.article-right {
+	padding: 3em 1em;
+}
+.recent-posts {
+	margin: 0 0 3em;
+}
+.recent-posts h4 {
+	font-size: 20px;
+	margin-bottom: 1em;
+}
+.recent-posts-info {
+	margin-bottom: 4em;
+}
+.recent-posts-left {
+	color: #999;
+	float:left;
+	margin-right: 1em;
+}
+.recent-posts-left img {
+    width: 150px;
+    height: 150px;
+}
+.recent-posts-left span {
+    display: block;
+}
+.recent-posts-left span i {
+	margin: 0 0.5em;
+    color: rgb(58, 205, 188);
+}
+.recent-posts-right{
+	padding-left: 15px;
+}
+.recent-posts-right h5 {
+	font-size: 16px;
+	font-weight: 500;
+	color: rgb(58, 205, 188);
+}
+
+.recent-posts-right p {
+  color: #999;
+  font-size: 14px;
+  margin: .5em 0;
+}
+
+
+@media(max-width:480px){
+.article {
+  padding: 2em 0;
+}
+.article-content h5 {
+  font-size: 14px;
+}
+.article-content {
+  font-size: 14px;
+}
+.article-left {
+	padding: 2em 0.5em;
+}
+.article-coment {
+	padding: 2em, 0;
+}
+.article-right {
+  padding: 2em 0.5em;
+}
+}

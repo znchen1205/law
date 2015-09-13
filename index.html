@@ -55,10 +55,10 @@
 				</a>
 			</div>
 			<div class="top-nav">
-				<span class="menu">
+				<span class="small-nav">
 					<a id="nav-toggle" href="#"><span></span></a>
 				</span>
-				<ul class="nav1">
+				<ul class="large-nav">
 					<li><a href="about.html">團隊介紹</a></li>
 					<li><a href="service.html">專業領域</a></li>
 					<li><a href="blog.html">法律教室</a></li>
@@ -74,8 +74,8 @@
   				//end nav-toggle icon animation
 
   				//menu toggle animation
-				   $( "span.menu" ).click(function() {
-					 $( "ul.nav1" ).slideToggle( 300, function() {
+				   $( "span.small-nav" ).click(function() {
+					 $( "ul.large-nav" ).slideToggle( 300, function() {
 					  });
 					 });
 				//end menu toggle animation
@@ -127,7 +127,7 @@
 	<!--work-->
 	<div class="work">
 		<div class="container">
-			<div class="work-title">
+			<div class="page-title">
 				<h3>法律<span>時事</span></h3>
 			</div>
 			<!--//End-slider-script -->
@@ -277,8 +277,8 @@
 	<!--case-->
 	<div class="case">
 		<div class="container">
-			<div class="case-title">
-					<h3>成功<span>案例</span></h3>
+			<div class="page-title">
+					<h3>成功案例</h3>
 			</div>
 			<div class="tab-container" id="tab">
 			    <div class="tab-header clearfix">
@@ -471,60 +471,41 @@
 	</div>
 	<!--//case-->
 
-	<!--content-->
-	<div class="content">
+	<!--introduce-->
+	<div class="introduce">
 		<div class="container">
-			<div class="content-grids">
-				<div class="col-md-8 humble">
-					<div class="work-title humble-title">
-						<h3>專業<span>團隊</span></h3>
+			<div class="introduce-grids">
+				<!-- team -->
+				<div class="team col-md-8">
+					<div class="page-title">
+						<h3>專業團隊</h3>
 					</div>
-					<div class="col-md-6 humble-grids">
-						<div class="content-left">
-							<a href="images/img1.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
-								<img class="img-responsive" src="images/img1.jpg" alt="" />
-								<div class="b-wrapper">
-									<h2 class="b-animate1 b-from-left    b-delay03 ">
-										<img class="img-responsive" src="images/icon10.png" class="zoom" alt=""/>
-									</h2>
-								</div>
-							</a>
+					<div class="col-md-6">
+						<div class="team-info">
+							<img src="images/img1.jpg" alt="" />
 							<h4>城鎮南</h4>
 							<p>城鎮南律師是位經驗豐富、專業領域廣泛的商務律師。除併購、銀行金融、企業法制、資本市場、證券法規、房地產 </p>
-							<a class="rd-more" href="singlepage.html">Read More</a>
 						</div>
 					</div>
-					<div class="col-md-6 humble-grids">
-						<div class="content-left">
-							<a href="images/img37.jpg" class="b-link-stripe b-animate-go   swipebox"  title="">
-								<img class="img-responsive" src="images/img37.jpg" alt="" />
-								<div class="b-wrapper">
-									<h2 class="b-animate1 b-from-left    b-delay03 ">
-										<img class="img-responsive" src="images/icon10.png" class="zoom" alt=""/>
-									</h2>
-								</div>
-							</a>
+					<div class="col-md-6">
+						<div class="team-info">
+							<img src="images/img37.jpg" alt="" />
 							<h4>終極圓</h4>
 							<p>終極圓律師之專業領域主要在證券、投融資項目，對於商務與法律兩者之結合，以及跨國企業上市櫃公司、中小型企業、證券發行 </p>
-							<a class="rd-more" href="singlepage.html">Read More</a>
 						</div>
 					</div>
-					<link rel="stylesheet" href="css/swipebox.css">
-						<script src="js/jquery.swipebox.min.js"></script>
-						<script type="text/javascript">
-							jQuery(function($) {
-								$(".swipebox").swipebox();
-							});
-						</script>
 					<div class="clearfix"> </div>
 				</div>
-				<div class="col-md-4 testi">
-					<div class="work-title testi-title">
-						<h3>顧客<span>回饋</span> </h3>
+				<!-- //team -->
+
+				<!-- comment -->
+				<div class="comment col-md-4">
+					<div class="page-title">
+						<h3>顧客回饋</h3>
 					</div>
 					<!--//End-slider-script -->
 					<script src="js/responsiveslides.min.js"></script>
-					 <script>
+					<script>
 						// You can also use "$(window).load(function() {"
 						$(function () {
 						  // Slideshow 5
@@ -542,56 +523,29 @@
 							}
 						  });
 						});
-					  </script>
+					</script>
 					<div  id="top" class="callbacks_container">
 						<ul class="rslides" id="slider5">
-							<li>
-								<div class="testi-slider">
-									<div class="testi-image">
-										<img src="images/img10.jpg" alt="" title="image"/>
-									</div>
-									<h4>I AM VERY PLEASED.</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
-									<div class="testi-subscript">
-										<p><a href="singlepage.html">John Doe,</a>Web Developer</p>
-										<span class="sbscrpt"> </span>
-									</div>
-								</div>
+							<li class="comment-info">
+								<img src="images/img10.jpg"/>
+								<h4>感謝陳律師幫我贏得孩子監護權</h4>
+								<p>感謝奧德梅雅的專業諮詢服務，在陳律師的熱心幫忙下，幫我贏得孩子監護權，讓我這個媽媽生活再度有了依靠。</p>
+								<h6>鄭小姐</h6>
 							</li>
-							<li>
-								<div class="testi-slider">
-									<div class="testi-image">
-										<img src="images/img11.jpg" alt="" title="image"/>
-									</div>
-									<h4>I AM LOREM IPSUM.</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
-									<div class="testi-subscript">
-										<p><a href="singlepage.html">elit semper,</a>User Developer</p>
-										<span class="sbscrpt"> </span>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="testi-slider">
-									<div class="testi-image">
-										<img src="images/img12.jpg" alt="" title="image"/>
-									</div>
-									<h4>CONSECTETUR PIMAGNA.</h4>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu magna dolor, quisque semper.</p>
-									<div class="testi-subscript">
-										<p><a href="singlepage.html">Amet Doe,</a>Web Designer</p>
-										<span class="sbscrpt"> </span>
-									</div>
-								</div>
+							<li class="comment-info">
+								<img src="images/img11.jpg"/>
+								<h4>感謝鍾律師讓我免於無家可歸的困境</h4>
+								<p>本人自小耕農與天為樂，真沒想到有一天依靠了自家農地會被政府無故強制徵收，在鍾律師的熱心幫忙下，終於可以睡個好眠。</p>
+								<h6>林先生</h6>
 							</li>
 						</ul>
-					</div>
-				</div>
+					</div><!-- callbacks_container -->
+				</div><!-- //comment -->
 				<div class="clearfix"> </div>
-			</div>
-		</div>
+			</div><!-- //introduce-grids -->
+		</div><!-- //container -->
 	</div>
-	<!--//content-->
+	<!--//introduce-->
 
 	<!-- footer -->
 	<div class="footer">

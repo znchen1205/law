@@ -251,32 +251,6 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 	margin-top: .8em;
 	padding: 4em 0;
 }
-.work-title {
-  position: relative;
-}
-.work-title h3 {
-	color: #37393d;
-	font-size: 2.5em;
-	font-weight: 900;
-	margin: 0;
-	padding: 0 0 .7em 0;
-	letter-spacing: -1px;
-	border-bottom: 1px solid #cdcdcd;
-}
-.work-title h3::after {
-	position: absolute;
-	bottom: -5%;
-	left: 0%;
-	width: 9%;
-	height: 10px;
-	background: rgb(58, 205, 188);
-	content: '';
-	opacity: 1;
-}
-.work-title h3 span {
-	font-weight: 400;
-	margin-left: 10px;
-}
 .work-grids {
 	padding-top: 3em;
 	display: -ms-flexbox;

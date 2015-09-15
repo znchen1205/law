@@ -95,11 +95,6 @@ span.small-nav {
 	-moz-transform: translateY(10px);
 	transform: translateY(10px);
 }
-.large-nav a:hover,
-.large-nav a:focus {
-	color: #fff;
-	outline: none;
-}
 .large-nav a:hover::before,
 .large-nav a:focus::before,
 .large-nav a:hover::after,
@@ -197,14 +192,14 @@ span.small-nav {
 }
 /*----------------------//slider-up-arrow----------------------*/
 
-@media(max-width:768px){
-	.top-nav span.small-nav {
+@media(max-width:768px) {
+.top-nav span.small-nav {
 	display: block;
 	position: relative;
 	cursor: pointer;
 	margin: 25px auto;
 }
-.top-nav  ul.large-nav{
+.top-nav ul.large-nav {
 	display:none;
 	padding: 0;
 	margin:30px 0px;
@@ -219,22 +214,24 @@ span.small-nav {
 	background: rgba(0, 0, 0, 0.84);
 	margin: 0;
 	width: 100%;
-	padding: 1px;
-	border: 1px dotted rgb(97, 95, 95);
+	border: 1px solid rgb(97, 95, 95);
 }
 .top-nav ul li a {
 	display: block;
 	padding: 0.8em 0;
 	font-size: 16px;
 	margin: 0;
-	letter-spacing: 1px;
 	color: #fff;
 }
 .top-nav ul li a:hover, .top-nav ul li a.active {
-	color: #fff;
 	background:rgb(58, 222, 203);
-	padding: 1em 0;
-	margin-bottom: 1em;
+}
+.large-nav a::before,
+.large-nav a::after {
+	position: absolute;
+	left: 0;
+	width: 0%;
+	height: 0px;
 }
 /*---------------------------nav icon--------------------------------*/
 #nav-toggle {
@@ -274,12 +271,6 @@ span.small-nav {
   transform: rotate(-45deg);
 }
 /*-------------------------//nav icon--------------------------------*/
-.page-title h3 {
-	font-size: 2.2em;
-}
-.page-title h3::after {
-	bottom: -7%;
-}
 }
 
 @media(max-width:480px){
@@ -306,9 +297,6 @@ span.small-nav {
 }
 .top-nav  ul.large-nav{
 	margin: 20px auto;
-}
-.top-nav ul li a:hover, .top-nav ul li a.active {
-  padding: 0.3em 0;
 }
 .footer-left {
   float: none;

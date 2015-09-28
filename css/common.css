@@ -122,7 +122,7 @@ span.small-nav {
 	left: 0%;
 	width: 10%;
 	height: 10px;
-	background: rgb(58, 205, 188);
+	background: #7E8AA2;
 	content: '';
 	opacity: 1;
 }
@@ -140,7 +140,7 @@ span.small-nav {
   	font-size: 20px;
  	font-weight: 700;
  	text-align: center;
-  	color: #75DCD0;
+ 	color: #BD8D45;
     text-decoration:none;
 }
 .footer-right {
@@ -154,7 +154,7 @@ span.small-nav {
 .footer-right p a {
 	font-size: 14px;
 	font-weight: 700;
-	color: rgb(58, 205, 188);
+	color: #BD8D45;
 	margin-left: 5px;
 	text-decoration:none;
 }
@@ -163,7 +163,7 @@ span.small-nav {
 }
 .footer-right p a:hover {
   color: #67686b;
-  border-bottom: 1px solid rgb(58, 205, 188);
+  border-bottom: 1px solid #BD8D45;
 }
 /*----------------------//footer----------------------*/
 /*----------------------slider-up-arrow----------------------*/
@@ -178,7 +178,7 @@ span.small-nav {
 	height: 32px;
 	border: none;
 	text-indent: 100%;
-	background: url("../images/move-up.png") no-repeat 0px 0px;
+	background: url("../images/move-up.svg") no-repeat 0px 0px;
 }
 #toTopHover {
 	width: 32px;
@@ -224,7 +224,7 @@ span.small-nav {
 	color: #fff;
 }
 .top-nav ul li a:hover, .top-nav ul li a.active {
-	background:rgb(58, 222, 203);
+	background-color:#BD8D45;
 }
 .large-nav a::before,
 .large-nav a::after {

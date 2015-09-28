@@ -34,7 +34,7 @@
 }
 .contact-detail-grids span i{
 	margin-right: 1em;
-	color: rgb(58, 205, 188);
+	color: #BD8D45;
 }
 .contact-form {
 	padding: 3em 1em 5em;
@@ -75,7 +75,7 @@
 }
 .submit_btn {
 	color: #fff;
-	background: rgb(58, 205, 188);
+	background: #BD8D45;
 	cursor: pointer;
 	padding: 10px 0;
 	width: 10%;

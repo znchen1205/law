@@ -357,6 +357,9 @@ a.callbacks_nav.callbacks2_nav.next {
 	padding: 5em 0;
 	background:#fff;
 }
+.team {
+	margin-bottom: 3em;
+}
 .team-info {
   padding: 1em;
   margin-top: 2em;
@@ -518,6 +521,7 @@ a.callbacks_nav.callbacks2_nav.prev {
   right: 9.4%;
   top: -9%;
 }
+/*
 .team-info {
   padding: 15px 10px;
 }
@@ -530,7 +534,7 @@ a.callbacks_nav.callbacks2_nav.prev {
 .introduce-grids {
   background: none;
   border: none;
-}
+}*/
 .callbacks_nav.callbacks3_nav.prev {
   bottom: 10% !important;
   top: initial;

@@ -12,7 +12,7 @@
   padding: 3em 1em;
 }
 .contact-info p {
-  color: #999;
+  color: #666B71;
   font-size: 16px;
   line-height: 1.8em;
 }
@@ -29,11 +29,12 @@
 .contact-detail-grids span{
 	display: block;
 	font-size: 14px;
-	color: #999;
+	color: #666B71;
 	margin: 1em 0;
 }
 .contact-detail-grids span i{
 	margin-right: 1em;
+	vertical-align: middle;
 	color: #BD8D45;
 }
 .contact-form {
@@ -54,7 +55,7 @@
 	outline: none;
 	padding: 10px 15px 10px 15px;
 	font-size: 14px;
-	color: #999;
+	color: #666B71;
 	margin: 0 5px 20px 0;
 }
 .contact-form input:last-of-type {
@@ -68,7 +69,7 @@
 	height: 150px;
 	outline: none;
 	font-size: 14px;
-	color: #999;
+	color: #666B71;
 	resize: none;
 	padding: 10px;
 	margin-bottom: 1em;

@@ -22,7 +22,7 @@ padding: 3em 1em;
   margin-top: 2em;
 }
 .article-content p {
-	color: #999;
+	color: #666B71;
     font-size: 16px;
     line-height: 1.8em;
     text-align: justify;
@@ -34,7 +34,7 @@ padding: 3em 1em;
 	border-left: 5px solid #BD8D45;
 }
 .article-law p {
-	color: #999;
+	color: #666B71;
     font-size: 16px;
     line-height: 1.8em;
 	margin-top: 2em;
@@ -50,7 +50,7 @@ padding: 3em 1em;
 	list-style-type: none;
 	display: inline-block;
 	margin: 0 1em;
-	color: #999;
+	color: #666B71;
 	font-size: 14px;
 }
 .article-tags ul li i{
@@ -68,7 +68,7 @@ padding: 3em 1em;
 .article-author-right {
 	float: right;
 	width: 83%;
-	color: #999;
+	color: #666B71;
 	font-size: 14px;
 }
 .article-author-right span a {
@@ -93,7 +93,7 @@ padding: 3em 1em;
 	margin-bottom: 4em;
 }
 .recent-posts-left {
-	color: #999;
+	color: #666B71;
 	float:left;
 	margin-right: 1em;
 }
@@ -118,7 +118,7 @@ padding: 3em 1em;
 }
 
 .recent-posts-right p {
-  color: #999;
+  color: #666B71;
   font-size: 14px;
   margin: .5em 0;
 }

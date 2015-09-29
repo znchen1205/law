@@ -16,7 +16,7 @@
 	margin: 0 0 1em;
 }
 .about-info-right p {
-  color: #999;
+  color: #666B71;
   font-size: 16px;
   line-height: 1.8em;
   margin-top: 1em;
@@ -53,9 +53,10 @@
 	text-decoration:none;
 	color: #37393d;
 	margin-right: 10px;
+  display: inline;
 }
 .about-team-grids ul {
-  color: #999;
+  color: #666B71;
   font-size: 14px;
   line-height: 1.8em;
   padding-left: 20px;
@@ -64,11 +65,12 @@
 .about-team-grids span {
   display: block;
   font-size: 14px;
-  color: #999;
+  color: #666B71;
   margin: 0.5em 0;
 }
 .about-team-grids span i {
   margin-right: 1em;
+  vertical-align: middle;
   color: #BD8D45;
 }
 
@@ -115,5 +117,4 @@
   padding: 2em;
   margin: 0 0 8px 8px;
 }
-
 }

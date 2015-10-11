@@ -264,33 +264,30 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 	float: left;
 	/*width: 24.9%;*/
 	position:relative;
+  padding: 2em 2em 1em;
 	margin-left: 1px;
 	-webkit-flex: 1;
     -moz-flex: 1;
     -ms-flex: 1;
     flex: 1;
 }
-.news-grids-text {
-  padding: 1em 2em;
-  text-align: justify;
-}
 .news-grids-info h3 {
 	color: #37393d;
 	font-weight: 700;
 	font-size: 16px;
-	height: 35px;
+  line-height: 20px;
+	height: 40px;
 	overflow: hidden;
-}
-.news-grids-info img {
-	margin: 1em 0 0.5em;
+  margin: 1em 0em 0em;
 }
 .news-grids-info p {
   display: block;
   color: #666B71;
   font-size: 14px;
-  line-height:1.5em;
+  line-height:21px;
   height: 105px;
   overflow: hidden;
+  text-align: justify;
 }
 a.callbacks_nav.callbacks2_nav.prev {
 	top: -20%;
@@ -306,10 +303,7 @@ a.callbacks_nav.callbacks2_nav.next {
 }
 
 .news-tags {
-	border-top: 1px dotted #F3F3F3;
-	border-bottom: 1px dotted #F3F3F3;
-	padding: 0.5em 2em;
-	text-align: center;
+	margin: 0.5em 0 1em;
 }
 .news-tags a {
 	color: #999;

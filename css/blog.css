@@ -3,7 +3,7 @@
 Primary style
 
 -------------------------------- */
-.header {
+.header, .footer, .toTop {
   font-family: 'Microsoft JhengHei';
 }
 /*html * {

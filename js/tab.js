@@ -1,17 +1,12 @@
 $(function () {
 
-    /*
-     * Tabs
-     */
     $('#tab').each(function () {
 
-        
         // 將Tab各元素jQuery物件化
         var $tabList    = $(this).find('.tabs-nav'),   // Tab的列表
             $tabAnchors = $tabList.find('a'),          // Tab(鏈結)
             $tabPanels  = $(this).find('.tab-content'); // Panel
 
-        
         //點擊Tab時的處理
         //傳入作為參數的事件物件
         $tabList.on('click', 'a', function (event) {
@@ -36,12 +31,9 @@ $(function () {
             // 顯示對應點擊Tab的Panel
             $tabPanels.hide();
             $($this.attr('href')).show();
-
         });
 
         // 初始Tab的選擇狀態
         $tabAnchors.eq(0).trigger('click');
-
     });
-
 });

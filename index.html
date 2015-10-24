@@ -22,6 +22,38 @@
 <!-- smooth scroll to top -->
 <script type="text/javascript" src="js/jquery/2.1.3/jquery.min.js"></script>
 <!-- //smooth scroll to top -->
+
+<!-- enable slide touch -->
+<script type="text/javascript" src="js/jquery.event.move.js"></script>
+<script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+<script type="text/javascript">
+    // Next Slide on Swipe
+            if ($(window).width() < 992) { // Only if device's width is smaller than 992px
+                var slides = jQuery('.rslides'),
+                    i = 0;
+                slides
+                .on('swipeleft', function(e) {
+                  $('.rslides_nav.next').click();
+                  $(".rslides").mouseenter();
+                  setTimeout(function() {   $(".rslides").mouseleave(); }, 2000); // Delay automatic sliding for 2seconds after swiping
+                })
+                .on('swiperight', function(e) {
+                  $('.rslides_nav.prev').click();
+                  $(".rslides").mouseenter();
+                  setTimeout(function() {   $(".rslides").mouseleave(); }, 2000); // Delay automatic sliding for 2seconds after swiping
+                });
+
+                // If the movestart is heading off in an upwards or downwards direction, prevent it so that the browser scrolls normally.
+                jQuery('.rslides')
+                .on('movestart', function(e) {
+                  if ((e.distX > e.distY && e.distX < -e.distY) ||
+                      (e.distX < e.distY && e.distX > -e.distY)) {
+                    e.preventDefault();
+                  }
+                });
+            }
+</script>
+<!-- //enable slide touch -->
 </head>
 
 <body>

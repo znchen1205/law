@@ -10,9 +10,9 @@
   margin-bottom: 1em;
 }
 .about-info-right h4 {
-	color: #37393d;
 	font-size: 20px;
-	font-weight: 500;
+  font-weight: 600;
+  color: #37393d;
 	margin: 0 0 1em;
 }
 .about-info-right p {

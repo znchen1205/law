@@ -254,10 +254,10 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
 .news-grids {
 	padding-top: 3em;
 	display: -ms-flexbox;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
 }
 .news-grids-info {
 	background: #fff;
@@ -267,9 +267,9 @@ a.callbacks1_s3.active,a.callbacks1_s3:focus{
   padding: 2em 2em 1em;
 	margin-left: 1px;
 	-webkit-flex: 1;
-    -moz-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 .news-grids-info h3 {
 	color: #37393d;
